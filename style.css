@@ -102,3 +102,8 @@
     background-position: 0 100%;
     background-image: linear-gradient(90deg, #F5F0EC 50%, transparent 50%);
 }
+
+#popup {
+    position: absolute;
+    display: none;
+}
