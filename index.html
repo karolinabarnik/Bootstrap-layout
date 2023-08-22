@@ -20,7 +20,7 @@
             aria-controls="navbarHamburgerMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse py-2 bd-highlight d-flex flex-row-reverse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse py-2 bd-highlight d-flex flex-row-reverse" id="navbarNavDropdown navbarHamburgerMenu">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -28,7 +28,7 @@
                         Oferta
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Projekty ogrodów i zieleni publicznej</a>
+                        <a class="dropdown-item" href="#" >Projekty ogrodów i zieleni publicznej</a>
                         <a class="dropdown-item" href="#">Wizualizacje 3D</a>
                         <a class="dropdown-item" href="#">Projekty małej architektury</a>
                         <a class="dropdown-item" href="#">Projekty nawierzchni, oświetlenia, nawodnienia</a>
@@ -71,8 +71,8 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row">
-                        <div class="col-md-7 py-5 d-flex">
-                            <div class="col-md-6 container m-auto align-content-center">
+                        <div class="col-sm-7 py-5 d-flex">
+                            <div class="col-md-6 container align-content-center" >
                                 <h1 class="display-4 py-5">Nowoczesna <br>aranżacja <br>Twojego ogrodu </h1>
                                 <p class="pb-4">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
                                     realizacji.
@@ -89,10 +89,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-5 ">
-                            <img id="so-logo" class="d-block container-fluid p-0"
+                        <div class="col-sm-5" >
+                            <img id="so-logo" class="container-fluid p-0"
                                 src="https://i.postimg.cc/9Qzrwgwq/7e8c8cbffb7ff6cce67e90257cc8ee9c19094aba.jpg"
-                                alt="First slide" style="height: 100vh;">
+                                alt="First slide" style="height: 60vh" >
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="card border-0" style="border-radius: 10%; background-color: white; margin-bottom: 30%;">
+                    <div class="card border-0 mb-5" style="border-radius: 10%; background-color: white;">
                         <div class="card-body">
                             <img class="m-2" src="/img/04512d149295b2da873c8c161053e4e251b5be48.png"
                                 style="height:5vh; width: 6vh;">
@@ -173,14 +173,14 @@
             </div>
         </div>
     </section>
-    <section class="about container-fluid">
-        <div class="row">
-            <div class="col-lg-5 p-0">
-                <img class="d-block p-0 img-fluid"
-                    src="https://i.postimg.cc/4yJJXWzZ/df399fbc7d2d02daccea22da3a5cc9d5.jpg" alt="garden">
+    <section class="about">
+        <div class="row m-0">
+            <div class="col-md-5 p-0">
+                <img class="d-block p-0 container-fluid"
+                    src="https://i.postimg.cc/4yJJXWzZ/df399fbc7d2d02daccea22da3a5cc9d5.jpg" alt="garden" style="height: 69vh;">
             </div>
-            <div class="col-lg-7 py-5 d-flex" style="background-color: #1B5B31;">
-                <div class="col-md-6 m-auto align-content-center">
+            <div class="col-md-7 py-5 d-flex " style="background-color: #1B5B31;">
+                <div class="col-md-6 container m-auto align-content-center">
                     <h6 style="color: #F5F0EC;">O firmie</h6>
                     <h1 class="display-4" style="color: #F5F0EC;">Tworzymy <br><em>z pasją</em></h1>
                     <p class="py-5" style="color: #F5F0EC;">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
@@ -204,7 +204,7 @@
             <h6 class="pt-5">Realizacje</h6>
             <h1 class="display-4 pb-5">Nasze <em>projekty</em></h1>
         </div>
-        <div id="galeria">
+        <div id="galerry">
             <div class="photo photos container-fluid">
                 <img src="https://i.postimg.cc/Xv1ZpsSc/5d1cd9b91e56bc0d14c22b0ac5b9ae8e2bfbd5d1-min.jpg" alt="garden">
                 <img src="https://i.postimg.cc/sgyG8B4S/e595eff0256fb3185fa1a312c58e3e6d0335d0a5-min.jpg" alt="pool">
@@ -236,38 +236,37 @@
         </div>
     </section>
     <footer class="text-lg-start" style="background-color: #111111; color: #F5F0EC;">
-        <section class="d-flex justify-content-between justify-content-lg-between py-5 mb-5 border-bottom container">
-            <div class="d-none d-lg-block">
+      
+        <div class="container py-5 mb-5 border-bottom">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-start">
                 <span><b>giard</b>design </span>
             </div>
-            <div>
+            <div class="col-md-6 d-flex justify-content-end ">
                 <p>Daj znać co możemy dla Ciebie zrobić!
                     <button class="btn btn-contact rounded-pill ml-3 px-3 py-2">Skontaktuj się z nami
                     </button>
                 </p>
             </div>
-        </section>
-        <section class="d-flex justify-content-between py-4 my-5 px-0 container">
+        </div>
+        </div>
+        <section class="py-4 my-5 px-0 container">
             <div class="row">
-            <div class="col-md-6>
-                <div class=" d-flex justify-content-start">
-                <a href="#" class="btn" style="color:#F5F0EC;">Kontakt</a>
-                <a href="#" class="btn" style="color:#F5F0EC;">Instagram</a>
-                <a href="#" class="btn" style="color:#F5F0EC;">Facebook</a>
-                <a href="#" class="btn" style="color:#F5F0EC;">Linkedin</a>
-            </div>
-            </div>
-            <div class="col-md-6">
-                <div class="d-flex justify-content-end">
+                <div class="col-md-6 d-flex justify-content-start">
+                    <a href="#" class="btn" style="color:#F5F0EC;">Kontakt</a>
+                    <a href="#" class="btn" style="color:#F5F0EC;">Instagram</a>
+                    <a href="#" class="btn" style="color:#F5F0EC;">Facebook</a>
+                    <a href="#" class="btn" style="color:#F5F0EC;">Linkedin</a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
                     <p>000-000-000 giarddesign@kontakt.pl</p>
                 </div>
             </div>
         </div>
         </section>
-        <section class="d-flex py-4 mt-5 justify-content-between container">
+        <section class="container py-4 mt-5 ">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-start">
+                <div class="col-md-6 d-flex justify-content-start">
                         <p>Prawa zastrzeżone
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-c-circle" viewBox="0 0 16 16">
@@ -275,13 +274,11 @@
                                 d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />
                         </svg> 2022
                         </p>
-                    </div>
                 </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-end">
-                    <p>made by</p>
-                    </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <p> made by 
+                        <img src="img/Zrzut ekranu 2023-08-22 o 10.31.39.png" class="mb-2" >
+                    </p>
                 </div>
             </div>
         </section>
