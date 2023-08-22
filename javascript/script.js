@@ -25,3 +25,12 @@ $(function (){
         $('#popup').css('top', e.pageY +10);
     })
 })
+
+document.addEventListener("click", function(e){
+    if(e.target.classList.contains("gallery-item")){
+        const src = e.target.getAttribute("src");
+        document.querySelector(".modal-img").src = src;
+        $('#gallery-modal').modal('show');
+
+    }
+})
